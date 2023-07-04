@@ -1,4 +1,12 @@
-const path = require("path");
+const command_version = require("./version");
+const command_create_project = require("./new");
+
+
+module.exports = {
+    command_version,
+    command_create_project,
+}
+/*const path = require("path");
 const fs = require("fs");
 const baseDir = path.resolve(".");
 //const config = require(path.join(baseDir, "config.json"));
@@ -12,6 +20,9 @@ function generateDirectory() {
     }
 }
 
+async function command_version() {
+
+}
 
 async function command_check() {
     try {
@@ -69,6 +80,7 @@ function command_all(arg) {
 }
 
 module.exports = {
+    command_version,
     command_check,
     command_list_table,
     command_create,
@@ -76,4 +88,4 @@ module.exports = {
     command_update,
     command_delete,
     command_all
-}
+}*/

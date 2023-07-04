@@ -1,0 +1,14 @@
+{
+    "database": {
+        "engine": "{{engine}}",
+        "client": {
+            "server": "{{server}}",
+            "database": "{{database}}",
+            "user": "{{user}}",
+            "password": "{{password}}",
+            "port": ""
+        }
+    },
+    "outDir": "./dist",
+    "fieldDir": "./field"
+}
