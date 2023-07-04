@@ -1,0 +1,14 @@
+{
+    "database": {
+        "engine": "mysql",
+        "client": {
+            "server": "localhost",
+            "database": "ipedep",
+            "user": "admin",
+            "password": "s3RlEw3NiHjD",
+            "port": ""
+        }
+    },
+    "outDir": "./dist",
+    "fieldDir": "./field"
+}
