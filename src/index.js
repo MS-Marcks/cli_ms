@@ -1,19 +1,12 @@
-const program = require('commander');
-const { version } = require('../package.json');
+import { program } from 'commander';
+import { readJSONFile } from "./utils/readJson.js";
 
-const {
+import {
     command_version,
-    command_create_project,
-    /*command_check,
-    command_list_table,
-    command_create,
-    command_search,
-    command_update,
-    command_delete,
-    command_all*/
-} = require('./commands');
+    command_create_project
+} from './commands/index.js';
 
-program.version(version);
+program.version(readJSONFile('package.json').version);
 
 program
     .command('version')
@@ -21,11 +14,11 @@ program
     .action(command_version)
 
 program
-    .command('new <arg>')
+    .command('new')
     .description('Crear un nuevo proyecto')
     .action(command_create_project)
-
-/*program
+/*
+program
     .command('check')
     .description('Verificar la conexión a la base de datos')
     .action(command_check);

@@ -1,6 +1,6 @@
 'use strict';
 const mysql = require('promise-mysql');
-const connect = require("../../config/db");
+const connect = require("../db");
 
 const query = async (sp, body = null) => {
     try {

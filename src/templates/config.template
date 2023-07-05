@@ -9,6 +9,5 @@
             "port": ""
         }
     },
-    "outDir": "./dist",
-    "fieldDir": "./field"
+    "outDir": "./dist"
 }

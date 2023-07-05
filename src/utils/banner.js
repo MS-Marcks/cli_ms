@@ -1,7 +1,7 @@
-require('./colors');
-const figlet = require('figlet');
+import './colors.js';
+import figlet from 'figlet';
 
-const banner = (msn) => {
+export const banner = (msn) => {
     console.log();
     console.log(blue(figlet.textSync(msn, {
         font: 'ANSI Shadow',
@@ -9,5 +9,3 @@ const banner = (msn) => {
         verticalLayout: 'default'
     })));
 }
-
-module.exports = banner;

@@ -1,13 +1,11 @@
-const { version } = require("../../../package.json");
-const banner = require("../../utils/banner");
+import { readJSONFile } from "../../utils/readJson.js";
+import { banner } from "../../utils/banner.js";
 
-async function command_version() {
+export async function command_version() {
     console.log("");
     banner("MS DB");
     console.log(`
-    MS DB CLI: ${version}
+    MS DB CLI: ${readJSONFile('package.json').version}
     Node: ${process.version}
     `);
 }
-
-module.exports = command_version;

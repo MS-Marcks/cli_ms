@@ -1,7 +1,8 @@
 {
   "name": "msdb",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "",
+  "type": "module",
   "main": "./src/index.js",
   "bin": {
     "ms": "./src/index.js"
