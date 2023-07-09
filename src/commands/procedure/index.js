@@ -88,8 +88,6 @@ export function command_procedures() {
                 .replace("{{parameter}}", "IN puuid VARCHAR(36)")
                 .replace("{{body}}", DELETE
                     .replace("{{table}}", answers.name));
-            console.log(sp);
             fs.writeFileSync(path.join(currentDir, "sp_" + answers.name.toLowerCase() + ".sql"), sp);
-
         });
 }

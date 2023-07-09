@@ -28,7 +28,6 @@ export const readJSONFileModule = (filePath) => {
         const data = fs.readFileSync(path.join(rootDirectory, filePath), 'utf-8');
         return JSON.parse(data);
     } catch (error) {
-        console.log(error);
         return null;
     }
 }
