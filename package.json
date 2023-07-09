@@ -1,11 +1,11 @@
 {
   "name": "msdb",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "description": "",
   "type": "module",
-  "main": "./src/index.js",
+  "main": "./src/msdb.js",
   "bin": {
-    "ms": "./src/index.js"
+    "msdb": "./src/msdb.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +16,8 @@
   "dependencies": {
     "commander": "^11.0.0",
     "figlet": "^1.6.0",
-    "inquirer": "^9.2.7"
+    "inquirer": "^9.2.7",
+    "json-format": "^1.0.1",
+    "promise-mysql": "^5.2.0"
   }
 }

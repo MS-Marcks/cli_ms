@@ -1,8 +1,8 @@
 'use strict';
-const mysql = require('promise-mysql');
-const connect = require("../db");
+import mysql from 'promise-mysql';
+import { connect } from "./db.js";
 
-const query = async (sp, body = null) => {
+export const query = async (sp, body = null) => {
     try {
         const connection = await mysql.createConnection(connect);
         try {
@@ -18,5 +18,3 @@ const query = async (sp, body = null) => {
         return { code: 404, err: err };
     }
 }
-
-module.exports = query;
